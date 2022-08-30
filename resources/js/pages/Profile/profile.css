@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: .8em;
+    align-items: center;
+}
+
+.labelAvatar {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.labelAvatar input {
+    display: none;
+}
+
+.labelAvatar span {
+    z-index: 9999;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .4s;
+}
+
+.labelAvatar:hover span {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.labelAvatar img {
+    margin-bottom: 1px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.formProfile label {
+    magin-bottom: .5em;
+    font-size: 1.4em;
+
+}
+
+.formProfile input, textarea, select {
+    margin-bottom: 1em;
+    padding: .7em;
+    border: 0;
+    border-radius: 5px;
+    max-width: 600px;
+    background-color: #d7d7d7;
+}
+
+.formProfile input:disabled {
+    cursor: not-allowed;
+}
+
+.formProfile button {
+    max-width: 600px;
+}
